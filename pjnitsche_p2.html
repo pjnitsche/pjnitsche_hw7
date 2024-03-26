@@ -54,18 +54,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>pjnitsche_p2</h1>
+        <h1>Business Analytics Student Survey</h1>
         <div class="question">
-            <label for="favorite_course">My favorite course in the BAIS major is</label><br>
-            <input type="text" id="favorite_course" name="favorite_course" class="answer-input">
+            <p>I am finishing my __ year at Iowa:</p>
+            <div class="answer-checkbox">
+                <input type="checkbox" id="first-year" name="year" value="first">
+                <label for="first-year">First</label><br>
+                <input type="checkbox" id="second-year" name="year" value="second">
+                <label for="second-year">Second</label><br>
+                <input type="checkbox" id="third-year" name="year" value="third">
+                <label for="third-year">Third</label><br>
+                <input type="checkbox" id="fourth-year" name="year" value="fourth">
+                <label for="fourth-year">Fourth</label><br>
+                <input type="checkbox" id="fifth-year" name="year" value="fifth">
+                <label for="fifth-year">Fifth or more</label><br>
+            </div>
         </div>
         <div class="question">
-            <label for="least_favorite_course">My least favorite course in the BAIS major is</label><br>
-            <input type="text" id="least_favorite_course" name="least_favorite_course" class="answer-input">
-        </div>
-        <div class="question">
-            <label for="reason">The reason I chose the BAIS major is</label><br>
-            <textarea id="reason" name="reason" class="answer-input" rows="4"></textarea>
+            <p>BAIS Classes I have completed:</p>
+            <div class="answer-checkbox">
+                <input type="checkbox" id="info-systems" name="classes" value="info-systems">
+                <label for="info-systems">Info Systems</label><br>
+                <input type="checkbox" id="operations" name="classes" value="operations">
+                <label for="operations">Operations</label><br>
+                <input type="checkbox" id="foundations" name="classes" value="foundations">
+                <label for="foundations">Foundations of Business Analytics</label><br>
+                <input type="checkbox" id="computational-thinking" name="classes" value="computational-thinking">
+                <label for="computational-thinking">Computational Thinking</label><br>
+                <input type="checkbox" id="database-management" name="classes" value="database-management">
+                <label for="database-management">Database Management</label><br>
+                <input type="checkbox" id="data-wrangling" name="classes" value="data-wrangling">
+                <label for="data-wrangling">Data Wrangling</label><br>
+                <input type="checkbox" id="data-mining" name="classes" value="data-mining">
+                <label for="data-mining">Data Mining</label><br>
+                <input type="checkbox" id="bais-capstone" name="classes" value="bais-capstone">
+                <label for="bais-capstone">BAIS Capstone</label><br>
+            </div>
         </div>
         <div class="page-indicator">Page 2 of 3</div>
         <button onclick="window.location.href='pjnitsche_p3.html';" class="next-button">
