@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page One - Welcome</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Form</h1>
+    </header>
+    <main>
+        <p>Welcome to our form. Please fill in the following details:</p>
+        
+    </main>
+    
+</body>
+</html>

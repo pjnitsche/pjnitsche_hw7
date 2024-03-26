@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Three - Multiple Choice</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Multiple Choice Questions</h1>
+    </header>
+    <main>
+        <p>Choose the best answer for each question:</p>
+        <input type="radio" id="q1a" name="q1" value="A">
+        <label for="q1a">Option A</label><br>
+        <input type="radio" id="q1b" name="q1" value="B">
+        <label for="q1b">Option B</label><br>
+        
+        
+        <p>Choose your favorite color:</p>
+        <input type="radio" id="color1" name="color" value="Red">
+        <label for="color1">Red</label><br>
+        <input type="radio" id="color2" name="color" value="Blue">
+        <label for="color2">Blue</label><br>
+        
+    </main>
+   
+</body>
+</html>
