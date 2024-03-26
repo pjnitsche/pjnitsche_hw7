@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .question {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .answer-radio {
+            margin-top: 5px;
+        }
+        .page-indicator {
+            text-align: left;
+            float: left;
+            margin-top: 20px;
+        }
+        .submit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>pjnitsche_p3</h1>
+        <div class="question">
+            <p>What is your race?</p>
+            <div class="answer-radio">
+                <input type="radio" id="race-white" name="race" value="white">
+                <label for="race-white">White</label><br>
+                <input type="radio" id="race-black" name="race" value="black">
+                <label for="race-black">Black or African American</label><br>
+                <input type="radio" id="race-hispanic" name="race" value="hispanic">
+                <label for="race-hispanic">Hispanic or Latino</label><br>
+                <input type="radio" id="race-asian" name="race" value="asian">
+                <label for="race-asian">Asian</label><br>
+                <input type="radio" id="race-native" name="race" value="native">
+                <label for="race-native">Native American or American Indian</label><br>
+                <input type="radio" id="race-other" name="race" value="other">
+                <label for="race-other">Other</label><br>
+            </div>
+        </div>
+        <div class="question">
+            <p>What is your gender?</p>
+            <div class="answer-radio">
+                <input type="radio" id="gender-male" name="gender" value="male">
+                <label for="gender-male">Male</label><br>
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <label for="gender-female">Female</label><br>
+                <input type="radio" id="gender-nonbinary" name="gender" value="nonbinary">
+                <label for="gender-nonbinary">Non-Binary</label><br>
+                <input type="radio" id="gender-prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                <label for="gender-prefer-not-to-say">Prefer not to say</label><br>
+            </div>
+        </div>
+        <div class="page-indicator">Page 3 of 3</div>
+        <button onclick="window.location.href='pjnitsche_ty.html';" class="submit-button">
+            Submit Survey
+        </button>
+    </div>
+</body>
+</html>
