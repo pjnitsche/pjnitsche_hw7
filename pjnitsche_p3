@@ -31,7 +31,7 @@
             float: left;
             margin-top: 20px;
         }
-        .next-button {
+        .submit-button {
             display: inline-block;
             padding: 10px 20px;
             background-color: #007bff;
@@ -40,8 +40,10 @@
             border-radius: 5px;
             transition: background-color 0.3s;
             margin-top: 20px;
+            border: none;
+            cursor: pointer;
         }
-        .next-button:hover {
+        .submit-button:hover {
             background-color: #0056b3;
         }
     </style>
@@ -80,7 +82,9 @@
             </div>
         </div>
         <div class="page-indicator">Page 3 of 3</div>
-        <a href="pjnitsche_ty" class="next-button">Next Page</a>
+        <button onclick="window.location.href='pjnitsche_ty.html';" class="submit-button">
+            Submit Survey
+        </button>
     </div>
 </body>
 </html>

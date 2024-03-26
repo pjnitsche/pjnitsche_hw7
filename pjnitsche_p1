@@ -151,7 +151,9 @@
             </select>
         </div>
         <div class="page-indicator">Page 1 of 3</div>
-        <a href="pjnitsche_p2" class="next-button">Next Page</a>
+        <button onclick="window.location.href='pjnitsche_p2.html';" class="next-button">
+            Next Page
+        </button>
     </div>
 </body>
 </html>
