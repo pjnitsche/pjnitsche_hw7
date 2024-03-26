@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You!</title>
-    
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .thank-you-message {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .response-recorded {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Thank You!</h1>
-    </header>
-    <main>
-        <p>Thank you for completing our form!</p>
-        <p>We appreciate your time and effort.</p>
-    </main>
-    
+    <div class="container">
+        <h1>pjnitsche_ty</h1>
+        <div class="thank-you-message">Thank You!!!</div>
+        <div class="response-recorded">Your response has been recorded.</div>
+    </div>
 </body>
 </html>

@@ -3,17 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page One - Welcome</title>
-    
+    <title>Business Analytics Student Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .question {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .answer-input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        .required {
+            color: red;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        .page-indicator {
+            text-align: left;
+            float: left;
+            margin-top: 20px;
+        }
+        .next-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Form</h1>
-    </header>
-    <main>
-        <p>Welcome to our form. Please fill in the following details:</p>
-        
-    </main>
-    
+    <div class="container">
+        <h1>pjnitsche_p1</h1>
+        <div class="question">
+            <label for="home_country">Your home country is</label><br>
+            <input type="text" id="home_country" name="home_country" class="answer-input">
+        </div>
+        <div class="question">
+            <label for="hometown" class="required">My hometown is</label><br>
+            <input type="text" id="hometown" name="hometown" class="answer-input" required>
+        </div>
+        <div class="question">
+            <label for="homestate">My homestate is</label><br>
+            <select id="homestate" name="homestate" class="dropdown">
+                <option value="">-- choose state/territory --</option>
+                <option value="AL">AL - Alabama</option>
+                <option value="AK">AK - Alaska</option>
+                <option value="AZ">AZ - Arizona</option>
+                <option value="AR">AR - Arkansas</option>
+                <option value="CA">CA - California</option>
+                <option value="CO">CO - Colorado</option>
+                <option value="CT">CT - Connecticut</option>
+                <option value="DE">DE - Delaware</option>
+                <option value="FL">FL - Florida</option>
+                <option value="GA">GA - Georgia</option>
+                <option value="HI">HI - Hawaii</option>
+                <option value="ID">ID - Idaho</option>
+                <option value="IL">IL - Illinois</option>
+                <option value="IN">IN - Indiana</option>
+                <option value="IA">IA - Iowa</option>
+                <option value="KS">KS - Kansas</option>
+                <option value="KY">KY - Kentucky</option>
+                <option value="LA">LA - Louisiana</option>
+                <option value="ME">ME - Maine</option>
+                <option value="MD">MD - Maryland</option>
+                <option value="MA">MA - Massachusetts</option>
+                <option value="MI">MI - Michigan</option>
+                <option value="MN">MN - Minnesota</option>
+                <option value="MS">MS - Mississippi</option>
+                <option value="MO">MO - Missouri</option>
+                <option value="MT">MT - Montana</option>
+                <option value="NE">NE - Nebraska</option>
+                <option value="NV">NV - Nevada</option>
+                <option value="NH">NH - New Hampshire</option>
+                <option value="NJ">NJ - New Jersey</option>
+                <option value="NM">NM - New Mexico</option>
+                <option value="NY">NY - New York</option>
+                <option value="NC">NC - North Carolina</option>
+                <option value="ND">ND - North Dakota</option>
+                <option value="OH">OH - Ohio</option>
+                <option value="OK">OK - Oklahoma</option>
+                <option value="OR">OR - Oregon</option>
+                <option value="PA">PA - Pennsylvania</option>
+                <option value="RI">RI - Rhode Island</option>
+                <option value="SC">SC - South Carolina</option>
+                <option value="SD">SD - South Dakota</option>
+                <option value="TN">TN - Tennessee</option>
+                <option value="TX">TX - Texas</option>
+                <option value="UT">UT - Utah</option>
+                <option value="VT">VT - Vermont</option>
+                <option value="VA">VA - Virginia</option>
+                <option value="WA">WA - Washington</option>
+                <option value="WV">WV - West Virginia</option>
+                <option value="WI">WI - Wisconsin</option>
+                <option value="WY">WY - Wyoming</option>
+                <!-- Washington D.C. -->
+                <option value="DC">DC - Washington D.C.</option>
+                <!-- U.S. Territories -->
+                <option value="AS">AS - American Samoa</option>
+                <option value="GU">GU - Guam</option>
+                <option value="MP">MP - Northern Mariana Islands</option>
+                <option value="PR">PR - Puerto Rico</option>
+                <option value="VI">VI - U.S. Virgin Islands</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="impression">My impression of the BAIS major is</label><br>
+            <select id="impression" name="impression" class="dropdown">
+                <option value="">Select...</option>
+                <option value="5">5 - Very Positive</option>
+                <option value="4">4 - Somewhat Positive</option>
+                <option value="3">3 - Neutral</option>
+                <option value="2">2 - Somewhat Negative</option>
+                <option value="1">1 - Very Negative</option>
+            </select>
+        </div>
+        <div class="page-indicator">Page 1 of 3</div>
+        <a href="pjnitsche_p2" class="next-button">Next Page</a>
+    </div>
 </body>
 </html>
+
