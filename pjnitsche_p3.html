@@ -50,32 +50,25 @@
         .submit-button:hover {
             background-color: #0056b3;
         }
+        .tooltip-icon {
+            cursor: pointer;
+        }
+        .tooltiptext {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+        }
     </style>
 </head>
 <body class="page3">
     <div class="container">
         <h1>Business Analytics Student Survey</h1>
         <div class="question">
-            <p>What is your race?</p>
-            <div class="answer-radio">
-                <input type="radio" id="race-white" name="race" value="white">
-                <label for="race-white">White</label><br>
-                <input type="radio" id="race-black" name="race" value="black">
-                <label for="race-black">Black or African American</label><br>
-                <input type="radio" id="race-hispanic" name="race" value="hispanic">
-                <label for="race-hispanic">Hispanic or Latino</label><br>
-                <input type="radio" id="race-asian" name="race" value="asian">
-                <label for="race-asian">Asian</label><br>
-                <input type="radio" id="race-native" name="race" value="native">
-                <label for="race-native">Native American or American Indian</label><br>
-                <input type="radio" id="race-other" name="race" value="other">
-                <label for="race-other">Other</label><br>
-            </div>
-        </div>
-        <div class="question">
-            <p>What is your gender? <span class="tooltip">ℹ️
-                <span class="tooltiptext">This info is used to enhance diversity and inclusivity in tech by addressing historical gender imbalances.</span>
-            </span></p>
+            <p>What is your gender? <span class="tooltip-icon">ℹ️</span></p>
             <div class="answer-radio">
                 <input type="radio" id="gender-male" name="gender" value="male">
                 <label for="gender-male">Male</label><br>
@@ -86,11 +79,22 @@
                 <input type="radio" id="gender-prefer-not-to-say" name="gender" value="prefer-not-to-say">
                 <label for="gender-prefer-not-to-say">Prefer not to say</label><br>
             </div>
+            <div class="tooltiptext">This info is used to enhance diversity and inclusivity in tech by addressing historical gender imbalances.</div>
         </div>
         <div class="page-indicator">Page 3 of 3</div>
         <button onclick="window.location.href='pjnitsche_ty.html';" class="submit-button">
             Submit Survey
         </button>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tooltipIcon = document.querySelector(".tooltip-icon");
+            const tooltipText = document.querySelector(".tooltiptext");
+            
+            tooltipIcon.addEventListener("click", function() {
+                tooltipText.style.display = tooltipText.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 </body>
 </html>
